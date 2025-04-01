@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-white min-h-screen antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg font-semibold transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary text-primary hover:bg-primary/10 px-6 py-2 rounded-lg font-semibold transition-colors;
+  }
+
+  .card {
+    @apply bg-background-light/50 backdrop-blur-md rounded-lg p-6 border border-gray-800 hover:border-primary transition-colors;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-primary/20 text-white;
+}
+
+/* Code editor customizations */
+.monaco-editor {
+  @apply font-mono;
+}
+
+.monaco-editor .margin {
+  @apply bg-background;
+}
+
+.monaco-editor .line-numbers {
+  @apply text-gray-500;
+}
+
+.monaco-editor .current-line {
+  @apply bg-primary/10;
+}
+
+#root {
+  @apply min-h-screen;
+} 
