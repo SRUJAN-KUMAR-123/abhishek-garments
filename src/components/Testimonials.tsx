@@ -5,31 +5,31 @@ const testimonials = [
   {
     name: 'James Wilson',
     role: 'CEO',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    image: '/images/testimonials/client1.jpg',
     content: 'The attention to detail in my bespoke suit was exceptional. The team at Abhishek Garments truly understands the art of fine tailoring.',
   },
   {
     name: 'David Thompson',
     role: 'Lawyer',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    image: '/images/testimonials/client2.jpg',
     content: 'I\'ve never had a better fitting suit. The premium fabrics and expert craftsmanship at Abhishek Garments make all the difference.',
   },
   {
     name: 'Robert Chen',
     role: 'Entrepreneur',
-    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    image: '/images/testimonials/client3.jpg',
     content: 'The custom shirts at Abhishek Garments are perfect for my business meetings. The collar options and fabric selection are outstanding.',
   },
   {
     name: 'Michael Rodriguez',
     role: 'Executive',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    image: '/images/testimonials/client1.jpg',
     content: 'Their alteration service at Abhishek Garments is top-notch. They perfectly adjusted my evening tuxedo for a last-minute event.',
   },
   {
     name: 'Thomas Anderson',
     role: 'Professional',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    image: '/images/testimonials/client2.jpg',
     content: 'The accessories collection at Abhishek Garments is impressive. The ties and pocket squares perfectly complement my suits.',
   },
 ];

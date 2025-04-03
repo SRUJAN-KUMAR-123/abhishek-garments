@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import Testimonials from './components/Testimonials'
-import CTA from './components/CTA'
+import Home from './pages/Home'
 import EditorComponent from './components/Editor'
+import PriceGuide from './components/PriceGuide'
+import MeasurementGuide from './components/MeasurementGuide'
+import AppointmentBooking from './components/AppointmentBooking'
+import About from './components/About'
+import Collection from './components/Collection'
 
 function App() {
   return (
@@ -21,26 +23,16 @@ function App() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <Hero />
-                <Features />
-                <Testimonials />
-                <CTA />
+                <Home />
               </motion.div>
             }
           />
-          <Route
-            path="/editor"
-            element={
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <EditorComponent />
-              </motion.div>
-            }
-          />
-          {/* Add more routes here as needed */}
+          <Route path="/editor" element={<EditorComponent />} />
+          <Route path="/price-guide" element={<PriceGuide />} />
+          <Route path="/measurement-guide" element={<MeasurementGuide />} />
+          <Route path="/book-appointment" element={<AppointmentBooking />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/collection" element={<Collection />} />
         </Routes>
       </div>
     </Router>
